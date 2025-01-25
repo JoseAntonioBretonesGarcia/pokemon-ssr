@@ -18,7 +18,6 @@ export class PokemonService {
     }
 
     page = Math.max(0, page);
-
     return this.hhtp
       .get<PokemonAPIResponse>(`${this.apiUrl}?offset=${page * 20}&limit=20`)
       .pipe(
