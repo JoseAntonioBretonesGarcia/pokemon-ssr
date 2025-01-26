@@ -3,10 +3,9 @@ import {
   Component,
   effect,
   inject,
-  OnInit,
   signal,
 } from '@angular/core';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map, tap } from 'rxjs';

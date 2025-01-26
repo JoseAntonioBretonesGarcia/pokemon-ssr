@@ -1,10 +1,10 @@
-<h1 class="text-3xl">Pokemons List</h1>
+<h1 class="text-3xl text-center">Pokemons List</h1>
 <h2 class="text-xl">Pokemons Page: {{ currentPage() }}</h2>
 
 <hr class="my-2" />
 
 <pokemon-list [pokemons]="pokemons()" />
-<div class="flex justify-between mt-2">
+<div class="flex justify-between my-4">
   <button
     [disabled]="currentPage() === 1"
     [routerLink]="['/pokemons/page', currentPage()! - 1]"
